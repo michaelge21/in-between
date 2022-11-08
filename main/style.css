@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }  
+
+body {
+    background-color: #3d7fcf;
+    font-family: 'Merriweather', serif;
+}
+
+
+/* || Flex Setup and Styling */
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* || Grid Setup and Styling */
+section .container {
+    display: grid;   
+}
+
+h1 {
+    font-family: 'Josefin Slab', serif;
+    color: #FFF800;
+}
