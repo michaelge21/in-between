@@ -78,3 +78,10 @@ a:hover {
 a:active {
 
 }
+
+/* || Image Styling */
+
+article img {
+    width: 200px;
+    height: 200px;
+}
