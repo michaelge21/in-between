@@ -3,7 +3,9 @@
 
 html {
     box-sizing: border-box;
+    color: #FFF800;
   }
+
   *,
   *::before,
   *::after {
@@ -11,25 +13,68 @@ html {
   }  
 
 body {
-    background-color: #3d7fcf;
+    background-color: #2773CF;
     font-family: 'Merriweather', serif;
+    margin: 0;
 }
 
 
 /* || Flex Setup and Styling */
 
 .flex-container {
+    background-color: #3D7FCF;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /* || Grid Setup and Styling */
-section .container {
-    display: grid;   
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+    grid-template-rows: repeat(4, minmax(100px, 1fr));
 }
 
 h1 {
     font-family: 'Josefin Slab', serif;
-    color: #FFF800;
+    grid-area: header;
+    grid-area: 1 / 2 / 1 / 6;
+    text-align: center;
+    
+    line-height: 2rem;
+}
+
+article.prior {
+    grid-area: 2 / 2 / 2 / 6;
+    text-align: center;
+    outline: 1px grey solid;
+}
+
+article.action {
+    grid-area: 3 / 2 / 3 / 6;
+    text-align: center;
+    outline: 1px grey solid;
+}
+
+
+/* || Link Styling */
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:focus {
+    outline: 2px solid #CF51A7;
+}
+
+a:hover {
+
+}
+
+a:active {
+
 }
