@@ -31,8 +31,9 @@ body {
 /* || Grid Setup and Styling */
 .container {
     display: grid;
-    grid-template-columns: repeat(6, minmax(100px, 1fr));
-    grid-template-rows: repeat(4, minmax(100px, 1fr));
+    align-items: center;
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
 }
 
 h1 {
@@ -44,39 +45,51 @@ h1 {
     line-height: 2rem;
 }
 
-article.prior {
+article {
+    text-align: center;
+
+    outline: 1px grey solid;
+}
+
+
+
+.row2Wrapper {
     grid-area: 2 / 2 / 2 / 6;
-    text-align: center;
-    outline: 1px grey solid;
 }
 
-article.action {
+
+.row3Wrapper {
     grid-area: 3 / 2 / 3 / 6;
-    text-align: center;
-    outline: 1px grey solid;
 }
 
+
+
+.row4Wrapper {
+    grid-area: 4 / 2 / 4 / 6;
+   
+}
 
 /* || Link Styling */
 
-a:link {
 
+a:link {
+    color: white;
 }
 
 a:visited {
-
+    color: #f9f9f9
 }
 
 a:focus {
-    outline: 2px solid #CF51A7;
+    outline: 1px solid #FFF800;
 }
 
 a:hover {
-
+    text-decoration: none;
 }
 
 a:active {
-
+    color: #FFF800;
 }
 
 /* || Image Styling */
@@ -84,4 +97,10 @@ a:active {
 article img {
     width: 200px;
     height: 200px;
+}
+
+/* || h2 Styling */
+
+h2 {
+    padding: 2rem;
 }
