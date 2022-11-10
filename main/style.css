@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+html {
+    box-sizing: border-box;
+    color: #FFF800;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }  
+
+body {
+    background-color: #2773CF;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+
+/* || Flex Setup and Styling */
+
+.flex-container {
+    background-color: #3D7FCF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* || Grid Setup and Styling */
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+}
+
+h1 {
+    font-family: 'Josefin Slab', serif;
+    grid-area: header;
+    grid-area: 1 / 2 / 1 / 6;
+    text-align: center;
+    
+    line-height: 2rem;
+}
+
+article {
+    text-align: center;
+    background-color: #3D7FCF;
+}
+
+
+
+.row2Wrapper {
+    grid-area: 2 / 2 / 2 / 6;
+}
+
+
+.row3Wrapper {
+    grid-area: 3 / 2 / 3 / 6;
+}
+
+
+
+.row4Wrapper {
+    grid-area: 4 / 2 / 4 / 6;
+}
+
+/* || Link Styling */
+
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: #f9f9f9
+}
+
+a:focus {
+    outline: 1px solid #FFF800;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: #FFF800;
+}
+
+/* || Image Styling */
+
+article img {
+    width: 200px;
+    height: 200px;
+}
+
+/* || h2 Styling */
+
+h2 {
+    padding: 2rem;
+}
