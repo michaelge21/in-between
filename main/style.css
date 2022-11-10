@@ -47,8 +47,7 @@ h1 {
 
 article {
     text-align: center;
-
-    outline: 1px grey solid;
+    background-color: #3D7FCF;
 }
 
 
@@ -66,7 +65,6 @@ article {
 
 .row4Wrapper {
     grid-area: 4 / 2 / 4 / 6;
-   
 }
 
 /* || Link Styling */
