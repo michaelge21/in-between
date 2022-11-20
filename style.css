@@ -16,14 +16,13 @@ body {
     background-color: #2773CF;
     font-family: 'Merriweather', serif;
     margin: 0;
-    width: 100%;
 }
 
 
 /* || Flex Setup and Styling */
 
 .flex-container {
-    background-color: #3D7FCF;
+    background-color: #3C7ECE;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +30,7 @@ body {
 }
 
 /* || Grid Setup and Styling */
-.container {
+.grid-container {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(6, 1fr);
@@ -41,12 +40,10 @@ body {
 
 h1 {
     font-family: 'Josefin Slab', serif;
-    grid-area: header;
-    grid-area: 1 / 2 / 1 / 6;
-    text-align: center;
-    font-size: 2rem;
-    
-    line-height: 2.5rem;
+
+    grid-area: 1 / 2 / 1 / 6;    
+    line-height: 3rem;
+    font-size: 3rem;
 }
 
 
@@ -64,7 +61,7 @@ h1 {
 
 /* || Link Styling */
 
-.container div a{
+.grid-container div a{
     display: block;
     background-color: rgb(61, 127, 207, 1);
 }
@@ -84,7 +81,6 @@ a:focus {
 
 a:hover {
     text-decoration: none;
- 
 }
 
 a:active {
@@ -93,31 +89,36 @@ a:active {
 
 /* || Image Styling */
 
-article img {
-    width: 200px;
-    height: 200px;
-}
-
 nav img {
     width: 100vw;
+    /* || IMPORTANT */
 }
 
 /* || h2 Styling */
 
 h2 {
     padding: 2rem;
+    font-size: 2rem;
 }
 
 /* || Media Queries */
 
+@media (min-width: 1024px) {
+    nav img {
+        width: 1024px;
+    }
+}
+
 @media (max-width: 1024px) {
 
-    .container {
+    .grid-container {
     grid-template-columns: repeat(4, 1fr);
 }
 
     h1 {
         grid-area: 1 / 2 / 1 / 4;
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
 
     .row2Wrapper {
@@ -138,6 +139,7 @@ h2 {
     h1 {
         grid-area: 1 / 1 / 1 / 5;
         font-size: 1.5rem;
+        line-height: 2rem;
     }
 
     .row2Wrapper {
@@ -151,5 +153,4 @@ h2 {
     .row4Wrapper {
         grid-area: 4 / 1 / 4 / 5;
     }
-
 }
