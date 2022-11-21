@@ -90,7 +90,7 @@ a:active {
 /* || Image Styling */
 
 nav img {
-    width: 100vw;
+    max-width: 100%;
     /* || IMPORTANT */
 }
 
@@ -103,13 +103,13 @@ h2 {
 
 /* || Media Queries */
 
-@media (min-width: 1024px) {
+/* @media (min-width: 64rem) {
     nav img {
-        width: 1024px;
+        width: 64rem;
     }
-}
+} */
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
 
     .grid-container {
     grid-template-columns: repeat(4, 1fr);
@@ -134,7 +134,7 @@ h2 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 
     h1 {
         grid-area: 1 / 1 / 1 / 5;
