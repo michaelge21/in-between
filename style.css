@@ -34,16 +34,20 @@ body {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
+    
+    /* currently commented out bc seems to add extraneous space  */
+
     text-align: center;
 }
 
 h1 {
     font-family: 'Josefin Slab', serif;
-
     grid-area: 1 / 2 / 1 / 6;    
-    line-height: 2.8rem;
-    font-size: 2.8rem;
+    line-height: 2.9rem;
+
+    font-size: calc(1.5rem + 1.5vw);      
+    /* ||IMPORTANT */
 }
 
 
@@ -103,11 +107,7 @@ h2 {
 
 /* || Media Queries */
 
-/* @media (min-width: 64rem) {
-    nav img {
-        width: 64rem;
-    }
-} */
+
 
 @media (max-width: 64rem) {
 
@@ -117,8 +117,7 @@ h2 {
 
     h1 {
         grid-area: 1 / 2 / 1 / 4;
-        font-size: 2rem;
-        line-height: 2.5rem;
+
     }
 
     .row2Wrapper {
@@ -138,8 +137,7 @@ h2 {
 
     h1 {
         grid-area: 1 / 1 / 1 / 5;
-        font-size: 1.5rem;
-        line-height: 2rem;
+
     }
 
     .row2Wrapper {
